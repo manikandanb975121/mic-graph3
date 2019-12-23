@@ -1,0 +1,5 @@
+graph_auth = {
+    'tenant': '55947a3b-f15b-4094-8ac0-91f173db1962',
+    'client_id': '2602f460-a1d9-4f47-83b3-93ae2bb856bb',
+    'client_secret': 'dnt:4FlF8dw=85-lPd-jOvKuW9/zIm2Q',
+}

@@ -1,0 +1,316 @@
+[
+  {
+    "id": "1246",
+    "orgc_id": "2",
+    "org_id": "1",
+    "date": "2018-08-10",
+    "threat_level_id": "3",
+    "info": "OSINT - New KeyPass Ransomware Campaign Underway",
+    "published": true,
+    "uuid": "5b718bda-8d9c-477f-bcd5-4634950d210f",
+    "attribute_count": "7",
+    "analysis": "2",
+    "timestamp": "1570200370",
+    "distribution": "3",
+    "proposal_email_lock": false,
+    "locked": false,
+    "publish_timestamp": "1570200370",
+    "sharing_group_id": "0",
+    "disable_correlation": false,
+    "extends_uuid": "",
+    "Org": {
+      "id": "1",
+      "name": "ORGNAME",
+      "uuid": "5d951e6b-3b6c-4473-9edc-4ecfad535a14",
+      "local": true
+    },
+    "Orgc": {
+      "id": "2",
+      "name": "CIRCL",
+      "uuid": "55f6ea5e-2c60-40e5-964f-47a8950d210f",
+      "local": false
+    },
+    "Attribute": [
+      {
+        "id": "257874",
+        "type": "link",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "5b718d07-ac14-4b23-9a09-4837950d210f",
+        "event_id": "1246",
+        "distribution": "5",
+        "timestamp": "1534168336",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "value": "https://www.bleepingcomputer.com/news/security/new-keypass-ransomware-campaign-underway/",
+        "Galaxy": [],
+        "ShadowAttribute": [],
+        "Tag": [
+          {
+            "id": "9",
+            "name": "osint:source-type=\"blog-post\"",
+            "colour": "#00223b",
+            "exportable": true,
+            "user_id": "0",
+            "hide_tag": false,
+            "numerical_value": null
+          }
+        ]
+      },
+      {
+        "id": "257875",
+        "type": "text",
+        "category": "External analysis",
+        "to_ids": false,
+        "uuid": "5b718d35-5110-4e9a-b084-4c45950d210f",
+        "event_id": "1246",
+        "distribution": "5",
+        "timestamp": "1536842335",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "value": "A new distribution campaign is underway for a STOP Ransomware variant called KeyPass based on the amount of victims that have been seen. Unfortunately, how the ransomware is being distributed is unknown at this time.\r\n\r\nNot much is known regarding how this ransomware is being distributed other than what people have posted in the BleepingComputer forums. According to some of the posts, the ransomware appeared after the user downloaded and installed cracks such as KMSpico. Other reports state that it appeared on its own and that the victim did not install anything.",
+        "Galaxy": [],
+        "ShadowAttribute": [],
+        "Tag": [
+          {
+            "id": "9",
+            "name": "osint:source-type=\"blog-post\"",
+            "colour": "#00223b",
+            "exportable": true,
+            "user_id": "0",
+            "hide_tag": false,
+            "numerical_value": null
+          }
+        ]
+      },
+      {
+        "id": "257876",
+        "type": "email-src",
+        "category": "Payload delivery",
+        "to_ids": true,
+        "uuid": "5b9a590a-61b8-48b0-b5d0-5c6d950d210f",
+        "event_id": "1246",
+        "distribution": "5",
+        "timestamp": "1536841994",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "value": "keypass@bitmessage.ch",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      },
+      {
+        "id": "257877",
+        "type": "email-src",
+        "category": "Payload delivery",
+        "to_ids": true,
+        "uuid": "5b9a590a-e45c-4a9c-953d-5c6d950d210f",
+        "event_id": "1246",
+        "distribution": "5",
+        "timestamp": "1536841994",
+        "comment": "",
+        "sharing_group_id": "0",
+        "deleted": false,
+        "disable_correlation": false,
+        "object_id": "0",
+        "object_relation": null,
+        "value": "keypass@india.com",
+        "Galaxy": [],
+        "ShadowAttribute": []
+      }
+    ],
+    "ShadowAttribute": [],
+    "RelatedEvent": [],
+    "Galaxy": [
+      {
+        "id": "27",
+        "uuid": "3f44af2e-1480-4b6b-9aa8-f9bb21341078",
+        "name": "Ransomware",
+        "type": "ransomware",
+        "description": "Ransomware galaxy based on https://docs.google.com/spreadsheets/d/1TWS238xacAto-fLKh1n5uTsdijWdCEsGIM0Y0Hvmc5g/pubhtml",
+        "version": "4",
+        "icon": "btc",
+        "namespace": "misp",
+        "GalaxyCluster": [
+          {
+            "id": "4397",
+            "uuid": "22b4070e-9efe-11e8-b617-ab269f54596c",
+            "collection_uuid": "10cf658b-5d32-4c4b-bb32-61760a640372",
+            "type": "ransomware",
+            "value": "KEYPASS",
+            "tag_name": "misp-galaxy:ransomware=\"KEYPASS\"",
+            "description": "A new distribution campaign is underway for a STOP Ransomware variant called KeyPass based on the amount of victims that have been seen. Unfortunately, how the ransomware is being distributed is unknown at this time.",
+            "galaxy_id": "27",
+            "source": "Various",
+            "authors": [
+              "https://docs.google.com/spreadsheets/d/1TWS238xacAto-fLKh1n5uTsdijWdCEsGIM0Y0Hvmc5g/pubhtml",
+              "http://pastebin.com/raw/GHgpWjar"
+            ],
+            "version": "68",
+            "tag_id": "907",
+            "meta": {
+              "extensions": [
+                ".KEYPASS"
+              ],
+              "payment-method": [
+                "Bitcoin"
+              ],
+              "price": [
+                "300 $"
+              ],
+              "ransomnotes": [
+                "Attention!\n\nAll your files, documents, photos, databases and other important files are encrypted and have the extension: .KEYPASS\n\nThe only method of recovering files is to purchase an decrypt software and unique private key.\n\nAfter purchase you will start decrypt software, enter your unique private key and it will decrypt all your data.\n\nOnly we can give you this key and only we can recover your files.\n\nYou need to contact us by e-mail keypass@bitmessage.ch send us your personal ID and wait for further instructions.\n\nFor you to be sure, that we can decrypt your files - you can send us a 1-3 any not very big encrypted files and we will send you back it in a original form FREE.\n\nPrice for decryption $300.\n\nThis price avaliable if you contact us first 72 hours.\n\nE-mail address to contact us:\n\nkeypass@bitmessage.ch\n\n\n\nReserve e-mail address to contact us:\n\nkeypass@india.com\n\n\n\nYour personal id:\n[id]"
+              ],
+              "ransomnotes-filenames": [
+                "!!!KEYPASS_DECRYPTION_INFO!!!.txt"
+              ],
+              "refs": [
+                "https://www.bleepingcomputer.com/news/security/new-keypass-ransomware-campaign-underway/",
+                "https://www.kaspersky.com/blog/keypass-ransomware/23447/"
+              ],
+              "synonyms": [
+                "KeyPass"
+              ]
+            },
+            "local": false
+          }
+        ]
+      }
+    ],
+    "Object": [
+      {
+        "id": "17988",
+        "name": "file",
+        "meta-category": "file",
+        "description": "File object describing a file with meta-information",
+        "template_uuid": "688c46fb-5edb-40a3-8273-1af7923e2215",
+        "template_version": "14",
+        "event_id": "1246",
+        "uuid": "5b9a58f0-5ba8-4bd6-b7c4-3055950d210f",
+        "timestamp": "1536841968",
+        "distribution": "5",
+        "sharing_group_id": "0",
+        "comment": "",
+        "deleted": false,
+        "ObjectReference": [],
+        "Attribute": [
+          {
+            "id": "257878",
+            "type": "filename",
+            "category": "Payload delivery",
+            "to_ids": true,
+            "uuid": "5b9a58f1-ef90-4258-b4ff-3055950d210f",
+            "event_id": "1246",
+            "distribution": "5",
+            "timestamp": "1536841969",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": true,
+            "object_id": "17988",
+            "object_relation": "filename",
+            "value": "!!!KEYPASS_DECRYPTION_INFO!!!.txt",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "257879",
+            "type": "text",
+            "category": "Other",
+            "to_ids": false,
+            "uuid": "5b9a58f1-b5c4-4a26-acf3-3055950d210f",
+            "event_id": "1246",
+            "distribution": "5",
+            "timestamp": "1536841969",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": true,
+            "object_id": "17988",
+            "object_relation": "text",
+            "value": "Attention! \r\n\r\nAll your files, documents, photos, databases and other important files are encrypted and have the extension: .KEYPASS\r\n\r\nThe only method of recovering files is to purchase an decrypt software and unique private key.\r\n\r\nAfter purchase you will start decrypt software, enter your unique private key and it will decrypt all your data.\r\n\r\nOnly we can give you this key and only we can recover your files.\r\n\r\nYou need to contact us by e-mail keypass@bitmessage.ch send us your personal ID and wait for further instructions.\r\n\r\nFor you to be sure, that we can decrypt your files - you can send us a 1-3 any not very big encrypted files and we will send you back it in a original form FREE.\r\n\r\nPrice for decryption $300. \r\n\r\nThis price avaliable if you contact us first 72 hours.\r\n\r\nE-mail address to contact us:\r\n\r\nkeypass@bitmessage.ch\r\n\r\n\r\n\r\nReserve e-mail address to contact us:\r\n\r\nkeypass@india.com\r\n\r\n\r\n\r\nYour personal id:\r\n[id]",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          },
+          {
+            "id": "257880",
+            "type": "text",
+            "category": "Other",
+            "to_ids": false,
+            "uuid": "5b9a58f1-3060-4b93-9f4e-3055950d210f",
+            "event_id": "1246",
+            "distribution": "5",
+            "timestamp": "1536841969",
+            "comment": "",
+            "sharing_group_id": "0",
+            "deleted": false,
+            "disable_correlation": true,
+            "object_id": "17988",
+            "object_relation": "state",
+            "value": "Malicious",
+            "Galaxy": [],
+            "ShadowAttribute": []
+          }
+        ]
+      }
+    ],
+    "Tag": [
+      {
+        "id": "907",
+        "name": "misp-galaxy:ransomware=\"KEYPASS\"",
+        "colour": "#0088cc",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null
+      },
+      {
+        "id": "4",
+        "name": "tlp:white",
+        "colour": "#ffffff",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null
+      },
+      {
+        "id": "9",
+        "name": "osint:source-type=\"blog-post\"",
+        "colour": "#00223b",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null
+      },
+      {
+        "id": "70",
+        "name": "circl:incident-classification=\"malware\"",
+        "colour": "#366c00",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null
+      },
+      {
+        "id": "12",
+        "name": "malware_classification:malware-category=\"Ransomware\"",
+        "colour": "#2c4f00",
+        "exportable": true,
+        "user_id": "0",
+        "hide_tag": false,
+        "numerical_value": null
+      }
+    ]
+  }
+]
